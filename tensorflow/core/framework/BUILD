@@ -833,7 +833,8 @@ tf_cuda_library(
         "variant_tensor_data.h",
     ],
     visibility = [
-        "//tensorflow:__pkg__",
+	"//tensorflow/python/profiler/internal:__pkg__",
+	"//tensorflow:__pkg__",
         "//tensorflow/cc/saved_model:__subpackages__",
         "//tensorflow/core:__pkg__",
         "//tensorflow/core/runtime_fallback:__subpackages__",
@@ -1704,7 +1705,7 @@ tf_proto_library(
     ],
     visibility = [
         "//tensorflow/core:__subpackages__",
-        "//tensorflow/python:__pkg__",
+        "//tensorflow/python:__subpackages__",
         "//tensorflow/security/fuzzing:__subpackages__",
         "//waymo/ml/deploy/benchmark:__subpackages__",
     ],
